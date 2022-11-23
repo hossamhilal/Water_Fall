@@ -154,6 +154,8 @@ textarea:active {
 }
 
 .waterBtn span {
+	display: flex;
+    align-items: center;
 	color: inherit;
 	position: relative;
 	z-index: 1;
@@ -270,6 +272,7 @@ textarea:active {
 	flex-direction: column;
 	background: var(--text);
 	width: max-content;
+	min-width: 100%;
 	opacity: 0;
 	visibility: hidden;
 	transform: translateY(20px);
@@ -402,6 +405,7 @@ textarea:active {
 	right: 0;
 	z-index: 1;
 	height: 83%;
+	opacity: .7;
 	transition: all 0.7s ease-in-out;
 }
 
@@ -746,7 +750,7 @@ textarea:active {
 
 .mediaPoster {
 	width: 80%;
-	margin-left: auto;
+	margin-inline-start: auto;
 }
 
 .playBtn {
@@ -1215,7 +1219,7 @@ textarea:active {
 	width: fit-content;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.blogVector {
 		height: 200px;
 	}
@@ -1304,6 +1308,8 @@ textarea:active {
 }
 
 .contact li {
+	display: flex;
+    align-items: center;
 	font-size: 13px;
 	line-height: 1.6;
 	color: inherit;
@@ -1525,8 +1531,93 @@ textarea:active {
 }
 
 /*==========================||---------------------------||========================*/
-/*==========================||         Animation         ||========================*/
+/*==========================||        Ar Language        ||========================*/
 /*==========================||---------------------------||========================*/
+
+html[lang=ar] body {
+	direction: rtl;
+	text-align: right;
+}
+
+html[lang=ar] .vector {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    left: 0;
+    right: auto;
+}
+
+html[lang=ar] .secSubTitle {
+    border-radius: 25px 25px 0 25px;
+}
+
+html[lang=ar] .playBtn {
+    left: 15px;
+    right: auto;
+}
+
+html[lang=ar] .owl-nav {
+    right: auto;
+    left: 0;
+    flex-direction: row;
+}
+
+html[lang=ar] .productSlider::before {
+    right: -25px;
+    left: auto;
+}
+
+html[lang=ar] .productSlider::after {
+    left: -25px;
+    right: auto;
+}
+
+html[lang=ar] .customNav {
+    right: auto;
+    left: 0;
+	flex-direction: row;
+}
+
+html[lang=ar] .contact li i {
+    margin-inline-start: 5px;
+}
+
+html[lang=ar] .newsForm button i {
+    margin-inline-start: 5px;
+}
+
+html[lang=ar] .footerVector {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: auto;
+    left: 0;
+}
+
+html[lang=ar] .links a:hover {
+    transform: translateX(-10px);
+}
+
+html[lang=ar] .search button i {
+    margin-inline-start: 10px;
+    margin-inline-end: 0;
+}
+
+html[lang=ar] .closeSearch {
+    left: 5%;
+    right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    html[lang=ar] .navMenu {
+        left: 0;
+        right: auto;
+        transform: translateX(-100%);
+    }
+
+	html[lang=ar] .navMenu.show {
+		transform: translateX(0%);
+	}
+}
+
 
 @media screen and (max-width: 768px) {}
 
