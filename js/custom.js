@@ -62,13 +62,13 @@
         autoplaySpeed : 3000,
         autoplayTimeout : 3000,
         smartSpeed: 3000 ,
-        navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
+        navText: ["<span><i class='icofont-thin-right'></i></span>", "<span><i class='icofont-thin-left'></i></span>"],
         responsive: {
             0: {
                 items: 1
             },
             600: {
-                items: 1
+                items: 2
             },
             1000: {
                 items: 3
@@ -81,7 +81,6 @@
     owlProjects.owlCarousel({
         rtl: rtl,
         margin: 30,
-        stagePadding: 200,
         autoplay: true,
         loop: true,
         nav: false,
@@ -89,28 +88,31 @@
         autoplaySpeed : 3000,
         autoplayTimeout : 3000,
         smartSpeed: 3000 ,
-        navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
+        navText: ["<span><i class='icofont-thin-right'></i></span>", "<span><i class='icofont-thin-left'></i></span>"],
         responsive: {
             0: {
-                items: 2
+                items: 1,
+                stagePadding: 50
             },
             600: {
-                items: 2
+                items: 2,
+                stagePadding: 50
             },
             1000: {
-                items: 3
+                items: 3,
+                stagePadding: 200
             }
         }
     });
 
     // Go to the previous item
     $('.prevBtn').click(function() {
-        owl.trigger('owl.prev');
+        owlProjects.trigger('owl.prev');
     })
 
     // Go to the next item
     $('.nextBtn').click(function() {
-        owl.trigger('owl.next');
+        owlProjects.trigger('owl.next');
     })
 
 
@@ -125,7 +127,7 @@
         autoplaySpeed : 3000,
         autoplayTimeout : 3000,
         smartSpeed: 3000 ,
-        navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
+        navText: ["<span><i class='icofont-thin-right'></i></span>", "<span><i class='icofont-thin-left'></i></span>"],
         responsive: {
             0: {
                 items: 2
@@ -139,26 +141,13 @@
         }
     });
 
-    // Feature Hover
-    $('.feature').on('mouseenter', function() {
-        $('.feature').removeClass('featureActive');
-        $(this).addClass('featureActive');
+    // search
+    $('.openSearch').on('click', function() {
+        $('.search').css('display','flex');
     });
-
-    // Navbar Scroll 
-    $('.navMenu a').click(function(){
-        let id = $(this).attr('href');
-        $('html,body').animate({ 
-            scrollTop: $(id).offset().top - 20
-        },3000);
-    });
-
-
-    // Scroll To Top 
-    $('.scrollTop').click( function() {
-        $('html, body').animate({ 
-            scrollTop: 0
-        }, 3000);
+      
+    $('.closeSearch').on('click', function() {
+        $('.search').hide();
     });
 
 })(jQuery);

@@ -33,7 +33,7 @@
         <div class="headerNav">
             <div class="container">
                 <div class="siteNav">
-                    <a class="logo" href="index.html"> <img src="media/logo.png" alt="logo" class="img-fluid"> </a>
+                    <a class="logo" href="index.html"> <img src="media/logo.png" alt="logo" class="img-fluid w-100"> </a>
                     <div class="navMenu">
                         <ul>
                             <li class="active"> <a href="#"> home </a> </li>
@@ -67,7 +67,7 @@
                     <div class="settings">
                         <div class="language"> <a href="#"> ar </a></div>
                         <div class="openSearch"> <i class="icofont-search"></i> </div>
-                        <a class="contactBtn secondaryBtn" href="#"> <span> Contact Us </span>  </a>
+                        <a class="contactBtn secondaryBtn waterBtn" href="#"> <span> Contact Us </span>  </a>
                         <div class="menuBtn"> <span></span> <span></span> <span></span> </div>
                         <div class="bodyOverlay"></div>
                     </div>
@@ -81,7 +81,7 @@
                         <div class="itemData">
                             <h2> Where quality comes First  </h2>
                             <p> Committed to minimize the loss of lives and properties by providing fire protection products designed to comply with stringent safety and quality requirements. </p>
-                            <a class="secondaryBtn" href="#"> <span> read more </span> </a>
+                            <a class="secondaryBtn waterBtn" href="#"> <span> read more </span> </a>
                         </div>
                     </div>
                 </div>
@@ -90,12 +90,23 @@
                         <div class="itemData">
                             <h2> Where quality comes First  </h2>
                             <p> Committed to minimize the loss of lives and properties by providing fire protection products designed to comply with stringent safety and quality requirements. </p>
-                            <a class="secondaryBtn" href="#"> <span> read more </span> </a>
+                            <a class="secondaryBtn waterBtn" href="#"> <span> read more </span> </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="vector"> <img src="media/vector-1.png" class="img-fluid w-100 h-100" alt="vector"></div>
+        </div>
+    </div>
+
+    <!-- Search  -->
+    <div class="search">
+        <span class="closeSearch" title="close Search"> <i class="icofont-close-line"></i>  </span>
+        <div class="searchBox">
+          <form action="">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit" class="secondaryBtn waterBtn"> <span> <i class="icofont-search"></i> <b> search </b> </span> </button>
+          </form>
         </div>
     </div>
     
@@ -107,7 +118,7 @@
                     <div class="media">
                         <div class="mediaPoster">
                             <img src="media/media-poster.png" alt="video poster" class="img-fluid w-100 h-100">
-                            <div class="playBtn"> <i class="icofont-play"></i> </div>
+                            <div class="playBtn" data-toggle="modal" data-target="#videoModal"> <i class="icofont-play"></i> </div>
                         </div>
                         <div class="mediaVector">
                             <img src="media/media-vector.png" alt="media" class="img-fluid">
@@ -121,9 +132,18 @@
                         <p> <b> WATERFALL PUMPS MANUFACTURING </b> is a leading manufacturer of fire protection products located in Dubai, United Arab Emirates. </p>
                         <p> Saving lives and protecting properties is our foundation to continuously aim for improvement to provide high quality fire protection products that brings valuable solutions to our customers and whole fire protection industry. </p>
                         <p> We make it our goal to ensure that the importance of fire protection will be known to many as we believe that fire protection plays a very significant role to our daily lives. It is a preventive action that most of time is being ignored because people think it will not happen to them. But we, at Waterfall Pumps always believe in the saying “Prevention is better than cure”. </p>
-                        <a class="primaryBtn" href="#"> <span> learn more </span> </a>
+                        <a class="primaryBtn waterBtn" href="#"> <span> learn more </span> </a>
                     </div>
                 </div>    
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8FUr-jwJyrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -135,7 +155,7 @@
                 <h5 class="secSubTitle"> our products </h5>
                 <h2 class="secTitle"> fire protection products </h2>
             </div>
-            <div class="productsSlider">
+            <div class="productSlider">
                 <div class="owl-carousel owl-theme owlProducts">
                     <div class="item"> 
                         <div class="productItem">
@@ -183,12 +203,12 @@
                 <h2 class="secTitle"> our recent projects </h2>
 
                 <div class="customNav">
-                    <div class="prevBtn"> <i class="icofont-thin-right"></i> </div>
-                    <div class="nextBtn"> <i class="icofont-thin-left"></i></div>
+                    <div class="prevBtn">  <span> <i class="icofont-thin-right"></i> </span> </div>
+                    <div class="nextBtn"> <span> <i class="icofont-thin-left"></i> </span> </div>
                 </div>
             </div>
         </div>
-        <div class="projectsSlider">
+        <div class="projectSlider">
             <div class="owl-carousel owl-theme owlProjects">
                 <div class="item"> 
                     <div class="projectItem">
@@ -280,7 +300,7 @@
                                     </div>
                                     <h2> Waterfall Pumps collaborates with TYCO Fire & Security </h2>
                                     <p> Second Shipment of Waterfall Pumps Manufacturing’s fire pump sets in our collaboration with TYCO Fire & Security on their Electric Substation Project Waterfall Pumps Manufacturing had a privileged to participate in Africa’s leading security and fire trade exhibition</p>
-                                    <a class="secondaryBtn" href="#"> <span> read more </span> </a>
+                                    <a class="secondaryBtn waterBtn" href="#"> <span> read more </span> </a>
                                 </div>
                            </div>
                         </div>
@@ -297,7 +317,7 @@
                                     </div>
                                     <h2> Waterfall Pumps in International Fire Safety & Security Expo 2019 </h2>
                                     <p> Waterfall Pumps Manufacturing had a privileged to participate in International Fire Safety & Security Expo (IFSSE) last 14th – 16th of February 2019. The 3-day event was held in Bangabandhu International Conference Center in Dhaka, Bangladesh. This was the second time Waterfall Pumps joined the said event and it was always a great experience for them to be able to participate as they are able to meet new and familiar faces and share their knowledge about fire protection systems. </p>
-                                    <a class="secondaryBtn" href="#"> <span> read more </span> </a>
+                                    <a class="secondaryBtn waterBtn" href="#"> <span> read more </span> </a>
                                 </div>
                            </div>
                         </div>
@@ -392,7 +412,7 @@
     <div class="contact darkBg">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-sm-6 col-lg-4">
                     <div class="block">
                         <div class="blockIcon"> <i class="icofont-location-arrow"></i> </div>
                         <div class="blockData">
@@ -405,7 +425,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-sm-6 col-lg-4">
                     <div class="block">
                         <div class="blockIcon"> <i class="icofont-ui-call"></i> </div>
                         <div class="blockData">
@@ -417,13 +437,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-sm-12 col-lg-4">
                     <div class="newsLetter">
                         <h5> newsletter </h5>
                         <div class="newsForm">
                             <form action="">
                                 <input type="text" placeholder="enter your email">
-                                <button type="submit"> <i class="icofont-location-arrow"></i> subscribe </button>
+                                <button class="waterBtn" type="submit"> <span> <i class="icofont-location-arrow"></i> subscribe </span> </button>
                             </form>
                         </div>
                     </div>
@@ -436,8 +456,10 @@
     <div class="footer">
         <div class="container">
             <div class="row">
+                <div class="col-12">
+                    <a class="footerLogo" href="#"> <img src="media/logo.png" alt="logo"> </a>
+                </div>
                 <div class="col-12 col-sm-8">
-                    <a class="footerLogo" href="media/logo.png" alt="logo"></a>
                     <h2> Waterfall Pumps Manufacturing </h2>
                     <p> Due to the increasing fire related incidents recorded all over the world, the authorities have extended their efforts and strengthen their campaigns in minimizing the loss of lives and properties. With this in mind, the founders of Waterfall Pumps Manufacturing started its own factory and facility in Dubai, United Arab Emirates in March 2015 with a commitment to contribute to this noble objective by providing fire protection products that are designed to comply with various stringent safety and quality requirements. </p>
                 </div>
@@ -457,10 +479,10 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="row">
-                        <div class="col-12 col-4"> <img src="media/certificate-1.jpg" alt="certificate"> </div>
-                        <div class="col-12 col-4"> <img src="media/certificate-2.jpg" alt="certificate"> </div>
-                        <div class="col-12 col-4"> <img src="media/certificate-3.jpg" alt="certificate"> </div>
+                    <div class="certificates">
+                        <img src="media/certificate-1.png" class="img-fluid" alt="certificate">
+                        <img src="media/certificate-2.png" class="img-fluid" alt="certificate">
+                        <img src="media/certificate-3.png" class="img-fluid" alt="certificate"> 
                     </div>
                 </div>
                 <div class="col-12">
@@ -476,16 +498,13 @@
                 </div>
             </div>
         </div>
+        <div class="footerVector"> <img src="media/vector-2.png" alt="vector" class="img-fluid w-100 h-100"></div>
     </div>
 
     <!-- copyright  -->
     <div class="copyright">
-        <p> جميع الحقوق محفوظة © 2022. </p>
+        <p>© 2022 Waterfall Pumps Manufacturing. All Rights Reserved.</p>
     </div>
-
-    <!-- Whatsapp  -->
-    <a class="whatsapp" href="https://wa.me/00966563598481"> <i class="icofont-brand-whatsapp"></i> </div>
-
 
     <!-- JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
